@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+        	* {
+      	padding: 0;
+      	margin: 0;
+    	}
+    	a{
+    		text-decoration: none;
+    	}
+    	li{
+    		list-style-type: none;
+    	}
+    	.whole {
+    		width: 100%;
+    		height: 100px;     		
+      		position: relative;
+      		margin: 0 auto;
+    	}
+    	.red {
+    		width: 1200px;
+      	  	height: 101px;     	  	     	  	
+      	 	position: relative;
+      	 	margin: 0 auto;
+    	}
+    	.red-1 {      		
+      		width: 170px;
+      		height: 39px;      		
+      		margin-top: 33px;
+      		float: left;
+    	}
+    	.red-2 {
+    		width: 241px;
+      		height: 18px;     		
+      		margin-top: 42px;
+      		margin-left: 79px;
+      		float: left;
+    	}
+    	.red-3{
+    		width: 80px;
+      		height: 18px;      		
+      		float: left;
+    	}
+    	.red-4 {
+    		width: 70px;
+      		text-align: center;
+      		font-size: 18px;
+      		font-weight: 400px;
+      		color: rgba(255,0,60,1);
+      		font-family: Microsoft YaHei; 
+      		background: rgba(255,242,0,0.5);    		
+    	}
+    	.red-5 {
+    		width: 140px;
+    		color: rgba(255,0,60,1);
+      		text-align: center;
+      		font-size: 18px;
+      		font-weight: 400px;     		
+      		font-family: Microsoft YaHei;
+      		background: rgba(255,242,0,0.5);
+    	}
+    	.red>.red-2>.red-3 {
+      		float: left;
+      		position: relative;
+    	}
+    	.red a:hover {
+      		border-bottom: 2px solid #00A4FF;
+    	}
+    	
+    	.red-6 {
+      		margin-top: 31px;
+      		margin-left: 677px;
+    	}
+    	
+    	.red-7 {
+    		width: 360px;
+      		height: 38px;
+      		font-size: 14px;
+      		font-weight: 400;      		
+      		color: rgba(191,191,191,1);
+      		line-height: 31px;
+      		padding-left: 19px;
+      		margin-top: 31px;      		     		
+      		border: 1px solid #00A4FF;
+      		float: left;
+    	}
+    	.red-8 {
+    		width: 50px;
+      		height: 40px;      		
+      		margin-top: 31px;
+      		border: none;
+      		background:url(images/button.png) no-repeat center;
+      		float: left;
+    	}
+    	.green {
+    		background: rgba(0,242,100,0.5);
+    		width: 1200px;
+      		height: 420px;
+       	}
+    	.attract {
+      		height: 420px;
+      		width: 800px;
+      		margin: 0 auto;
+      		position: relative;
+    	}
+    	.green-1 {
+      		position: absolute;
+    	}
+    	.green-2 {
+    		width: 120px;
+      		height: 420px;
+      		background: rgba(0,0,0,1);
+      		margin-left: -50px;
+      		position: relative;
+      		opacity: 0.3;
+    	}
+    	.green-3 {
+    		width: 80px;
+      		height: 365px;
+      		line-height: 44px;
+      		padding-top: 27px;
+      		padding-left: 20px;      		
+    	}
+    	
+    	.green-3>.green-4>a:hover {
+      		color: #00B4FF;
+    	}
+    	.green-3>.green-4>a {     		
+      		font-size: 14px;
+      		font-weight: 400;
+      		color: #FFFFFF;
+    	}
+    	.blue{
+        	width:1200px;
+        	height:70px;
+        	background:rgba(255,255,255,1);
+        	margin:0 auto;
+        	box-shadow:0px 2px 3px 0px
+        	rgba(118,118,118,0.2);
+      	}
+      	.blue-1{
+        	width:1200px;
+        	margin:0 auto;
+      	}
+      	.blue-2{
+        	padding:26px 0;
+        	float:left;
+      	}
+      	.blue-2 li{
+        	width:123px;
+        	border-right:1px solid black;
+        	text-align:center;
+        	line-height:18px;
+        	float:left;
+      	}
+      	.blue-1 .blue-3{
+        	font-weight:bold;
+        	color:#00A4FF;
+      	}
+      	.blue-1 .blue-4{
+        	border-right:none;
+      	}
+		.yellow{
+      		width: 1200px;
+      		height: 19px;
+      		margin: 0 auto;
+      		padding-top: 37px;
+      		padding-bottom: 21px;
+    	}
+
+    	.yellow-1{      
+      		width:80px;
+      		height:19px;
+      		font-size:20px;
+      		font-weight:400;
+      		color:rgba(73,73,73,1);
+      		float: left;
+    	}
+
+    	.yellow-2{      
+      		padding-right: 31px;
+      		float: right;
+    	}
+
+    	.yellow-2 a{
+    	  	width:48px;
+      		height:13px;
+      		font-size:12px;
+      		font-weight:400;
+      		color:rgb(165,165,165);
+    	}
+    	.font {
+      width: 1230px;
+          height: 585px;        
+          margin: 0 auto;
+      }
+      .font .font-1 {
+        width: 228px;
+          height:270px;        
+          margin-top: 15px;
+          margin-bottom: 15px;
+          margin-left: 14px;
+          position: relative;
+          display: inline-block;
+          background:rgba(255,255,255,1);
+          box-shadow: 0px 2px 5px 0px;          
+      }
+      .font-2 {
+        width: 228px;
+          height: 155px;          
+      }
+      .font-5 {
+        color: #767676;
+          top: 231px;
+          left: 60px;         
+          font-size: 12px;
+          position: absolute;         
+      }
+      .font-3 {
+        width: 185px;
+          height: 34px;
+          position: absolute;         
+          top: 179px;
+          left: 23px;         
+      }
+      .font-4 {
+          top: 231px;
+          left: 23px;
+            color: rgba(255,124,45,1);
+          font-size: 12px;        
+          font-weight: 400;         
+      }
+      .better{
+        width:100%;
+        height:417px;
+        background:rgba(255,255,255,1);
+      }
+      .better >.better-1>ul{
+        width:100px;
+        height:127px;
+        margin:140px 0 10px 110px;
+        float:left;
+        display:inline-block;
+      }
+      .better >.better-1 li{
+        width:100px;
+        height:15px;
+        font-size:12px;
+        font-weight:400;
+        line-height:14px;
+        margin-bottom:5px;
+      }
+      .better >.better-1>ul a{
+        color:rgba(51,51,51,1);
+      }
+    .better >.better-1 .better-5{
+      width:100px;
+        height:20px;
+        font-size:16px;
+        font-weight:400;
+        line-height:21px;
+        margin-bottom:15px;
+        color:rgba(51,51,51,1);
+    }
+    .better >.better-1>ul a:hover{
+      color:#00A4FF;
+    }
+        </style>
+    </head>
+    <body>
+    	<div class="world">
+    		<div class="red">
+    			<div class="red-1">
+    				<img src="images/youxiangongsi.png" alt="北京天和书苑文化传播有限公司">
+    			</div>
+    			<ul class="red-2">
+    				<li class="red-3"><a href="" class="red-4">首页</a></li>
+    				<li class="red-3"><a href="" class="red-4">书库</a></li>
+    				<li class="red-3"><a href="" class="red-5">公司简介</a></li>
+    			</ul>
+    			<form action="" class="red-6">
+    				<input type="text" placeholder="输入书名" class="red-7">
+    				<input type="button" class="red-8">
+    			</form>
+    		</div>
+    		<div class="green">
+    			<div class="attract">
+    				<img src="images/ccnddn.jpg" alt="从菜鸟到大牛" class="green-1">
+    			
+    			<div class="green-2">
+    				<ul class="green-3">
+    					<li class="green-4"><a href="">文学艺术<span class="green-5"></span></a></li>
+    					<li class="green-4"><a href="">人文社科<span class="green-5"></span></a></li>
+    					<li class="green-4"><a href="">经管励志<span class="green-5"></span></a></li>
+    					<li class="green-4"><a href="">健康生活<span class="green-5"></span></a></li>
+    					<li class="green-4"><a href="">考试教育<span class="green-5"></span></a></li>
+    					<li class="green-4"><a href="">期刊杂志<span class="green-5"></span></a></li>
+    					<li class="green-4"><a href="">进口原版书<span class="green-5"></span></a></li>
+    					<li class="green-4"><a href="">少儿<span class="green-5"></span></a></li>
+    					<li class="green-4"><a href="">科技<span class="green-5"></span></a></li>
+    				</ul>
+    			</div>
+    			</div>
+    		</div>
+    		<div class="blue">
+      			<div class="blue-1 clear">
+        		<ul class="blue-2 clear">
+          			<li class="blue-3"><a href="#">公司简介</a></li>
+          			<li><a href="">图书展示</a></li>
+          			<li><a href="">公司资质</a></li>
+          			<li><a href="">库房图片</a></li>
+          			<li><a href="">数目下载</a></li>
+          			<li><a href="">供货计划和流程</a></li>
+          			<li class="blue-4"><a href="">联系我们</a></li>
+        		</ul>
+    			</div>
+    		</div>
+    		<div class="yellow">
+				<span class="yellow-1">新书上架</span>
+				<span class="yellow-2"><a href="">查看全部</a></span>
+			</div>
+			<div class="font">
+      <div class="font-1">
+        <a href="">
+          <img src="images/peihaizi.jpg" alt="《陪孩子终身成长》" class="fnt-2">
+          <p class="font-3">《陪孩子终身成长》</p>
+          <p class="font-4">樊登</p>
+        </a>
+        <p class="font-5">¥35.70</p>
+      </div>
+      <div class="font-1">
+        <a href="">
+          <img src="images/sushimin.jpg" alt="《苏世民：我的经验与教训》" class="font-2">
+          <p class="font-3">《苏世民：我的经验与教训》</p>
+          <p class="font-4">苏世民</p>
+        </a>
+        <p class="font-5">¥45.90</p>
+      </div>
+      <div class="font-1">
+        <a href="">
+          <img src="images/manhua.jpg" alt="《半小时漫画经济学》" class="font-2">
+          <p class="font-3">《半小时漫画经济学》</p>
+          <p class="font-4"> 半小时漫画经济学</p>
+        </a>
+        <p class="font-5">¥25.00</p>
+      </div>
+      <div class="font-1">
+        <a href="">
+          <img src="images/rensheng.jpg" alt="《人生海海》" class="font-2">
+          <p class="font-3">《人生海海》</p>
+          <p class="font-4">麦家</p>
+        </a>
+        <p class="font-5">¥37.90</p>
+      </div>
+      <div class="font-1">
+        <a href="">
+          <img src="images/huoluan.jpg" alt="《霍乱时期的爱情》" class="font-2">
+          <p class="font-3">《霍乱时期的爱情》</p>
+          <p class="font-4">马尔克斯</p>
+        </a>
+        <p class="font-5">¥39.10</p>
+      </div>
+      <div class="font-1">
+        <a href="">
+          <img src="images/tiancai.jpg" alt="《天才在左疯子在右》" class="font-2">
+          <p class="font-3">《天才在左疯子在右》</p>
+          <p class="font-4">高铭</p>
+        </a>
+        <p class="font-5">¥19.00</p>
+      </div>
+      <div class="font-1">
+        <a href="">
+          <img src="images/zizai.jpg" alt="《自在独行》" class="font-2">
+          <p class="font-3">《自在独行》</p>
+          <p class="font-4">贾平凹</p>
+        </a>
+        <p class="font-5">¥19.50</p>
+      </div>
+      <div class="font-1">
+        <a href="">
+          <img src="images/jianxin.jpg" alt="《见信如晤:私密信件博物馆 》" class="font-2">
+          <p class="font-3">《见信如晤:私密信件博物馆 》</p>
+          <p class="font-4">肖恩亚瑟</p>
+        </a>
+        <p class="font-5">¥78.60</p>
+      </div>
+      <div class="font-1">
+        <a href="">
+          <img src="images/tangshi.jpg" alt="《唐诗三百首》改编" class="font-2">
+          <p class="font-3">《唐诗三百首》改编</p>
+          <p class="font-4">孙静</p>
+        </a>
+        <p class="font-5">¥39.90</p>
+      </div>
+      <div class="font-1">
+        <a href="">
+          <img src="images/youni.jpg" alt="《有你真好》" class="font-2">
+          <p class="font-3">《有你真好》</p>
+          <p class="font-4">杨霞</p>
+        </a>
+        <p class="font-5">¥29.80</p>
+      </div>
+    </div>
+    <div class="better">
+    	<div class="better-1">
+    	<ul>
+          <li class="better-5">购物指南</li>
+          <li><a href="">免费注册</a></li>
+          <li><a href="">会员等级</a></li>
+          <li><a href="">常见问题</a></li>
+        </ul>
+        <ul>
+          <li class="better-5">支付方式</li>
+          <li><a href="">苏宁支付</a></li>
+          <li><a href="">网银支付</a></li>
+          <li><a href="">快捷支付</a></li>
+          <li><a href="">分期付款</a></li>
+          <li><a href="">货到付款</a></li>
+          <li><a href="">任性付支付</a></li>         
+        </ul>
+          <ul>
+            <li class="better-5">物流配送</li>
+            <li><a href="">运费政策</a></li>
+            <li><a href="">物流配送服务</a></li>
+            <li><a href="">签收验货</a></li>
+            <li><a href="">物流查询</a></li>
+          </ul>
+          <ul>
+            <li class="better-5">售后服务</li>
+            <li><a href="">退换货政策</a></li>
+            <li><a href="">贵就赔</a></li>
+            <li><a href="">维修/安装</a></li>
+            <li><a href="">订单修改</a></li>
+            <li><a href="">退换货申请</a></li>
+            <li><a href="">我的发票</a></li>
+          </ul>
+          <ul>
+            <li class="better-5">商家服务</li>
+            <li><a href="">合作招商</a></li>
+            <li><a href="">培训中心</a></li>
+            <li><a href="">广告服务</a></li>
+            <li><a href="">商家帮助</a></li>
+            <li><a href="">服务市场</a></li>
+            <li><a href="">规则中心</a></li>
+          </ul>
+    </div>
+    </div>
+    	</div>
+    </body>
+</html>
